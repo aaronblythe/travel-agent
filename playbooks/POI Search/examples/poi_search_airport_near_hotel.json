@@ -1,0 +1,38 @@
+{
+  "name": "4c851557-dbdd-4bd5-940e-07153e074198",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "You're looking for the closest airport to your current hotel in San Francisco, correct?"
+    }
+  }, {
+    "toolUse": {
+      "tool": "projects/aaron-infobot/locations/us-central1/agents/45e589a8-ceb5-42c9-b7e5-bd4c56e728f1/tools/47c3ac51-204c-40c2-b4ad-a88ebd8b55b9",
+      "action": "places_search_tool",
+      "inputActionParameters": {
+        "request": {
+          "city": "San Francisco",
+          "preferences": "airport"
+        }
+      },
+      "outputActionParameters": {
+        "response": {
+          "results": [ {
+            "name": "San Francisco International Airport"
+          } ]
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "The closest airport is San Francisco International Airport."
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to know where the closest airport is to their current hotel in San Francisco"
+  },
+  "playbookOutput": {
+    "executionSummary": "The agent shared the closest airport in San Francisco."
+  },
+  "displayName": "poi_search_airport_near_hotel",
+  "retrievalStrategy": "DEFAULT"
+}

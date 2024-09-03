@@ -1,0 +1,40 @@
+{
+  "name": "7e7d87b1-834f-41eb-8ac4-b437d0f720e2",
+  "actions": [ {
+    "userUtterance": {
+      "text": "I need to find a hotel in Austin starting on Dec 3rd and staying for a week."
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/aaron-infobot/locations/us-central1/agents/45e589a8-ceb5-42c9-b7e5-bd4c56e728f1/playbooks/cb8ffec2-a996-4cf2-8682-af4c19a33a66",
+      "playbookInput": {
+        "precedingConversationSummary": "The user wants to book a hotel in New York City from Dec 5-10",
+        "actionParameters": {
+          "check_in_date": "2023-12-03",
+          "check_out_date": "2023-12-10",
+          "city": "Austin"
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The agent booked the hotel for the user in Austin, Texas and shared the confirmation number.",
+        "state": "OK"
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Anything else?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "That's all"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Thanks for traveling with Google. Have a great day."
+    }
+  } ],
+  "displayName": "hotel_booking_2",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_PENDING"
+}

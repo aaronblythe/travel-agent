@@ -1,0 +1,43 @@
+{
+  "name": "4d71cc92-82a6-4787-9f6c-72dcad5967aa",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "There's nothing like warm sun and fresh salt air! ☀️🌊\nHere's a few popular beach destinations in Europe: \n\n- Barcelona\n- Ibiza\n- Mykonos\n- Santorini\n- Crete\n- Rhodes\n- Corfu\n- Zakynthos\n- Majorca\n- Tenerife"
+    }
+  }, {
+    "userUtterance": {
+      "text": "We've never been to Greece. Can you show more cities there that would be good for vacation?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sure! Here are some family friendly beach destinations in Greece: \n\n- Athens\n- Thessaloniki\n- Corfu\n- Zakynthos\n- Crete\n- Rhodes\n- Santorini\n- Mykonos\n- Naxos\n- Paros"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Thessaloniki"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/aaron-infobot/locations/us-central1/agents/45e589a8-ceb5-42c9-b7e5-bd4c56e728f1/playbooks/cb8ffec2-a996-4cf2-8682-af4c19a33a66",
+      "playbookInput": {
+        "precedingConversationSummary": "The user wants to book a hotel in Thessaloniki",
+        "actionParameters": {
+          "city": "Thessaloniki",
+          "num_rooms": 2,
+          "num_travelers": 5
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The customer was able to book a hotel in Thessaloniki"
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to go on a beach trip somewhere in Europe"
+  },
+  "playbookOutput": {
+    "executionSummary": "The agent presented lists of beach destinations in Europe and Greece. The user selected Thessaloniki to book a hotel."
+  },
+  "displayName": "inspiration_with_image_click_1",
+  "retrievalStrategy": "DEFAULT"
+}

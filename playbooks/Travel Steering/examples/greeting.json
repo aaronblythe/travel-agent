@@ -1,0 +1,47 @@
+{
+  "name": "46f29544-3f1b-4c82-a06c-57c6544994a0",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Hello"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Hi, I'm your Google travel assistant. I can help you search for points of interest, get travel inspiration, or book a hotel. What can I help you with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I want to find a restaurant in Denver."
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/aaron-infobot/locations/us-central1/agents/45e589a8-ceb5-42c9-b7e5-bd4c56e728f1/playbooks/20c31554-9206-4440-89e0-9da89e8f0eed",
+      "playbookInput": {
+        "precedingConversationSummary": "User wants to find a restaurant in Denver.",
+        "actionParameters": {
+          "city": "Denver"
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "Agent listed restaurants in Denver.",
+        "state": "OK"
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Anything else?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "No thanks"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Thanks for traveling with Google. Have a great day!"
+    }
+  } ],
+  "displayName": "greeting",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_PENDING",
+  "languageCode": "en"
+}

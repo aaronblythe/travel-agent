@@ -1,0 +1,35 @@
+{
+  "name": "014bbe3d-c7cd-47a5-9719-07b9a4364d85",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Load the John Smith personal profile"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "projects/aaron-infobot/locations/us-central1/agents/45e589a8-ceb5-42c9-b7e5-bd4c56e728f1/playbooks/711c16e7-6cbb-41ac-92bf-8bd57b012cc9",
+      "playbookInput": {
+        "precedingConversationSummary": "The user wants to load the John Smith personal profile",
+        "actionParameters": {
+          "profile_id": "John Smith - Personal"
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The user was able to load the profile",
+        "state": "OK",
+        "actionParameters": {
+          "user_details": {
+          
+          }
+        }
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  } ],
+  "playbookOutput": {
+    "state": "OK"
+  },
+  "displayName": "load_profile_1",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}
